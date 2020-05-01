@@ -46,7 +46,7 @@ def send_to_aws(bytes_raw):
             print("[+] Image id :"+search_faces['FaceMatches'][0]['Face']['ExternalImageId'])
         except IndexError:
             print("[+] An unregistered user has been detected sending an email to the admin now!")
-            #send_mail()
+            send_mail()
 
 access_key_id = cred.Access_key_ID
 secret_access_key = cred.Secret_access_key
